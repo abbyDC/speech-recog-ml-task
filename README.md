@@ -68,7 +68,7 @@ Google Colab was utilized to run training and inference for the entire experimen
 | 16,000                     | 30      | 64         | 89%                        |
 | 16,000                     | 35      | 64         | 90%                        |
 | 24,000                     | 35      | 64         | 91.45%                     |
-| **24,000**                 | **45**  | **64**     | **91.59%**                 |
+| **24,000**                 | **45**  | **64**     | **91.60%**                 |
 | 24,000                     | 50      | 64         | 91.17%                     |
 
 ## VI. References
