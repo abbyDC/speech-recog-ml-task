@@ -25,20 +25,20 @@ Official test set: http://download.tensorflow.org/data/speech_commands_test_set_
 - stop
 - up
 - yes
-- _silence_
-- _unknown_
+- \_silence\_
+- \_unknown\_
 
 ## II. Data Preprocessing
 
-Upon closer inspection of the data, the 12 labels used in testing were not the same as the labels for training
+Upon closer inspection of the data, the 12 labels used for testing are not the same as the labels for training
 
-1. `unknown.py` script was used to compile all words which are not part of the 12 keywords into one label called '_unknown_'
+1. `unknown.py` script was used to compile all words which are not part of the 12 keywords into one label called '\_unknown\_'
     - only a subset of these were used to closely match the number of samples for the other labels
 
 
-2. `split_bg.py` script was used to split each sample in the '_background_noises_' label into 1 second chunks
+2. `split_bg.py` script was used to split each sample in the \'_background_noises\_' label into 1 second chunks
     - each sample from the other labels were 1 second wavs so there was a need to match the file size with this label
-    - the preprocessed wavs were saved under the '_silence_' label
+    - the preprocessed wavs were saved under the '\_silence\_' label
 
 ## III. Training
 
@@ -48,15 +48,21 @@ It was heavily based from the tutorial in https://www.tensorflow.org/tutorials/a
 
 ### Notes
 
-1. Visualizations were added to inspect the data as well as results
+1. Visualizations were added to inspect the data as well as results.
 
 2. There's already a trained model available so no need to run this to get a model.
 
-Model available here: <insert_link>
+
 
 ## IV. Test Data Evaluation and Inference
 
 For data evaluation and inference, please see `kws_eval_inference.ipynb`
+
+### Notes
+
+1. Just run the whole notebook to simulate the evaluation and inference with the model.
+
+2. Part of the setup already includes downloading the test data and the trained model so you just need to run the cell.
 
 
 ## V. Experiments Documentation
