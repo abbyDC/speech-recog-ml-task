@@ -28,7 +28,7 @@ spec:
         app: kws
     spec:        
       containers:
-      - name: diet-classifier
+      - name: kws
         image: asia.gcr.io/ai-experiments-332802/kws:v1.0.0
         ports:
         - containerPort: 5000

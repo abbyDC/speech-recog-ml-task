@@ -64,6 +64,30 @@ For data evaluation and inference, please see `kws_eval_inference.ipynb`
 
 2. Part of the setup already includes downloading the test data and the trained model so you just need to run the cell.
 
+## V. API Inference 
+
+I also deployed an api through GCP Kubernetes to allow you to send in your requests without having to setup anything.
+
+To access this, here are the steps:
+
+1. Use an application to send in POST requests e.g. Postman
+
+2. Enter this request URL `35.243.102.152/query`
+
+3. Click on Body > form-data
+
+4. Hover over the "key" cell and choose "file"
+
+5. Add the ff. values
+
+    - key: audio 
+    - value: \<upload your audio file here\>
+
+6. If you're using postman, it should look like this
+
+![title](images/postman.png)
+
+7. Click send to send in your request to the API
 
 ## V. Experiments Documentation
 
