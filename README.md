@@ -32,14 +32,13 @@ Official test set: http://download.tensorflow.org/data/speech_commands_test_set_
 
 Upon closer inspection of the data, the 12 labels used for testing are not the same as the labels for training
 
-1. `preprocessing/unknown.py` script was used to compile all words which are not part of the 12 keywords into one label called '\_unknown\_'
+1. `preprocessing/unknown.py` script was used to compile all words which are not part of the 10 words into one label called '\_unknown\_'
     - only a subset of these were used to closely match the number of samples for the other labels
 
 
-2. `preprocessing/split_bg.py` script was used to split each sample in the \'_background_noises\_' label into 1 second chunks
+2. `preprocessing/split_bg.py` script was used to split the data from \'_background_noises\_' label into 1s chunks into the '\_silence\_' label
     - each sample from the other labels were 1 second wavs so there was a need to match the file size with this label
-    - the preprocessed wavs were saved under the '\_silence\_' label
-
+    
 ## III. Training
 
 For the training script, please see `kws_training.ipynb` for the source code
