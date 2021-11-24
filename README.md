@@ -36,7 +36,7 @@ Upon closer inspection of the data, the 12 labels used for testing are not the s
     - only a subset of these were used to closely match the number of samples for the other labels
 
 
-2. `preprocessing/split_bg.py` script was used to split the data from \'_background_noises\_' label into 1s chunks into the '\_silence\_' label
+2. `preprocessing/split_bg.py` script was used to split the data from \'_background_noises\_' label into 1s chunks for the '\_silence\_' label
     - each sample from the other labels were 1 second wavs so there was a need to match the file size with this label
     
 ## III. Training
@@ -88,7 +88,7 @@ To access this, here are the steps:
 
 7. Click send to send in your request to the API
 
-## V. Experiments Documentation
+## VI. Experiments Documentation
 
 Google Colab was utilized to run training and inference for the entire experimentation.
 
@@ -100,7 +100,7 @@ Google Colab was utilized to run training and inference for the entire experimen
 | **24,000**                 | **45**  | **64**     | **91.60%**                 |
 | 24,000                     | 50      | 64         | 91.17%                     |
 
-## VI. References
+## VII. References
 
 TensorFlow Audio Recognition - https://www.tensorflow.org/tutorials/audio/simple_audio
 
